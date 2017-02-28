@@ -1,22 +1,21 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26206.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Message360.PCL", "Message360.PCL/Message360.PCL.csproj", "{dcccb331-8d15-4822-9370-ea59bf43929a}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Message360.PCL", "Message360.PCL\Message360.PCL.csproj", "{DCCCB331-8D15-4822-9370-EA59BF43929A}"
 EndProject
 Global
-    GlobalSection(SolutionConfigurationPlatforms) = preSolution
-        Debug|Any CPU = Debug|Any CPU
-        Release|Any CPU = Release|Any CPU
-    EndGlobalSection
-    GlobalSection(ProjectConfigurationPlatforms) = postSolution
-        {dcccb331-8d15-4822-9370-ea59bf43929a}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-        {dcccb331-8d15-4822-9370-ea59bf43929a}.Debug|Any CPU.Build.0 = Debug|Any CPU
-        {dcccb331-8d15-4822-9370-ea59bf43929a}.Release|Any CPU.ActiveCfg = Release|Any CPU
-        {dcccb331-8d15-4822-9370-ea59bf43929a}.Release|Any CPU.Build.0 = Release|Any CPU
-    EndGlobalSection
-    GlobalSection(SolutionProperties) = preSolution
-        HideSolutionNode = FALSE
-    EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DCCCB331-8D15-4822-9370-EA59BF43929A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCCCB331-8D15-4822-9370-EA59BF43929A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCCCB331-8D15-4822-9370-EA59BF43929A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCCCB331-8D15-4822-9370-EA59BF43929A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
 EndGlobal

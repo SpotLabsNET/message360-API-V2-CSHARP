@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Text;
 using message360.Models;
+using message360.Utilities;
 
 namespace message360
 {
@@ -35,19 +36,19 @@ namespace message360
         public static Dictionary<Environments, Dictionary<Servers, string>> EnvironmentsMap =
             new Dictionary<Environments, Dictionary<Servers, string>>
             {
-                { 
+                {
                     Environments.PRODUCTION,new Dictionary<Servers, string>
                     {
                         { Servers.DEFAULT,"https://api.message360.com/api/v2" },
                     }
                 },
-                { 
+                {
                     Environments.PREPRODUCTION,new Dictionary<Servers, string>
                     {
                         { Servers.DEFAULT,"https://api-preprod.message360.com/api/v2" },
                     }
                 },
-                { 
+                {
                     Environments.DEVELOPMENT,new Dictionary<Servers, string>
                     {
                         { Servers.DEFAULT,"https://api-dev.message360.com/api/v2" },
@@ -56,7 +57,7 @@ namespace message360
             };
 
         /// <summary>
-        /// Makes a list of the BaseURL parameters 
+        /// Makes a list of the BaseURL parameters
         /// </summary>
         /// <return>Returns the parameters list</return>
         internal static List<KeyValuePair<string, object>> GetBaseURIParameters()
@@ -64,7 +65,7 @@ namespace message360
             List<KeyValuePair<string, object>> kvpList = new List<KeyValuePair<string, object>>()
             {
             };
-            return kvpList; 
+            return kvpList;
         }
 
         /// <summary>
@@ -76,7 +77,7 @@ namespace message360
         {
             StringBuilder Url =  new StringBuilder(EnvironmentsMap[Environment][alias]);
             APIHelper.AppendUrlWithTemplateParameters(Url, GetBaseURIParameters());
-            return Url.ToString();        
+            return Url.ToString();
         }
     }
 }
